@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number game</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "Welcome! Computer choose the number. Guess it right and you'll win!"
+      );
+
+      var level = prompt(
+        "In game 5 levels. Level 1 (1-100 number). Level 2 (1-1000 number). Level 3 (1-10000 number). Level 4 (1-100000 number). Level 5 (1-1000000 number). Choose your level"
+      );
+
+      if (level == 1) {
+        var x = Math.floor(Math.random() * 101);
+        var y = 0;
+        var user = prompt("Guess the number");
+        while (x != user) {
+          y = y + 1;
+          if (user > x) {
+            user = prompt("Computer's number is smaller");
+          } else if (user < x) {
+            user = prompt("Computer's number is bigger");
+          }
+        }
+        if (y == 1) {
+          alert("Wow! You guessed right number from first attempt");
+        }
+        if (y <= 7) {
+          alert("Good job! You guessed in: " + y);
+        }
+        if (y > 10) {
+          alert("You found the number but used too many attempts: " + y);
+        }
+      } else if (level == 2) {
+        var x = Math.floor(Math.random() * 1001);
+        var y = 0;
+        var user = prompt("Guess the number");
+        while (x != user) {
+          y = y + 1;
+          if (user > x) {
+            user = prompt("Computer's number is smaller");
+          } else if (user < x) {
+            user = prompt("Computer's number is bigger");
+          }
+        }
+        if (y == 1) {
+          alert("Wow! You guessed right number from first attempt");
+        }
+        if (y <= 14) {
+          alert("Good job! You guessed in: " + y);
+        }
+        if (y > 20) {
+          alert("You found the number but used too many attempts: " + y);
+        }
+      } else if (level == 3) {
+        var x = Math.floor(Math.random() * 10001);
+        var y = 0;
+        var user = prompt("Guess the number");
+        while (x != user) {
+          y = y + 1;
+          if (user > x) {
+            user = prompt("Computer's number is smaller");
+          } else if (user < x) {
+            user = prompt("Computer's number is bigger");
+          }
+        }
+        if (y == 1) {
+          alert("Wow! You guessed right number from first attempt");
+        }
+        if (y <= 28) {
+          alert("Good job! You guessed in: " + y);
+        }
+        if (y > 40) {
+          alert("You found the number but used too many attempts: " + y);
+        }
+      } else if (level == 4) {
+        var x = Math.floor(Math.random() * 100001);
+        var y = 0;
+        var user = prompt("Guess the number");
+        while (x != user) {
+          y = y + 1;
+          if (user > x) {
+            user = prompt("Computer's number is smaller");
+          } else if (user < x) {
+            user = prompt("Computer's number is bigger");
+          }
+        }
+        if (y == 1) {
+          alert("Wow! You guessed right number from first attempt");
+        }
+        if (y <= 56) {
+          alert("Good job! You guessed in: " + y);
+        }
+        if (y > 80) {
+          alert("You found the number but used too many attempts: " + y);
+        }
+      } else if (level == 5) {
+        var x = Math.floor(Math.random() * 1000001);
+        var y = 0;
+        var user = prompt("Guess the number");
+        while (x != user) {
+          y = y + 1;
+          if (user > x) {
+            user = prompt("Computer's number is smaller");
+          } else if (user < x) {
+            user = prompt("Computer's number is bigger");
+          }
+        }
+        if (y == 1) {
+          alert("Wow! You guessed right number from first attempt");
+        }
+        if (y <= 112) {
+          alert("Good job! You guessed in: " + y);
+        }
+        if (y > 160) {
+          alert("You found the number but used too many attempts: " + y);
+        }
+      } else {
+        alert("Please type the number!");
+      }
+    </script>
+  </body>
+</html>
